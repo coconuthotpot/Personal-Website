@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: bisque;
+}
+
+header{
+    margin-top: 30px;
+    margin-left:10px ;
+    font-weight:bold;
+}
+
+
+#quote{
+    background-color:rgb(89, 142, 142);
+    border:3px solid black;
+    border-radius: 15pt;
+    padding:30px;
+    margin-top:30px;
+    text-align: center;
+    font-size: 18pt;
+    color:bisque;
+}
+
+#author{
+    font-style: italic;
+    text-align: right;
+    margin-top: 20px;
+    font-size: 14pt;
+}
+
+#btn{
+    display: block;
+    margin:0 auto;
+    margin-top: 40px;
+}

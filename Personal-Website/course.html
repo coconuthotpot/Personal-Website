@@ -1,0 +1,71 @@
+<!-- 
+Name: Chen Liu
+Date: 2023-03-11
+Section: CST 8285-313
+Lab: Assignmnet 1
+File: course.html
+Lab objective: • creating an personal portfolio webpage.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chen Liu">
+    <title>Course</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="search.js" defer></script>
+</head>
+
+<body>
+    <!--nav bar-->
+    <header>
+        <nav>
+            <a href="index.html">About Me</a>
+            <a href="resume.html">Resume</a>
+            <a href="course.html">Course</a>
+        </nav>
+    </header>
+
+    <!-- Search bar -->
+    <div class="search-section">
+        <div id="search-container">
+            <label for="search-input">Search courses:</label>
+            <input type="text" id="search-input" onkeyup="searchCourses()" placeholder="Enter course title...">
+        </div>
+
+        <!--filter-->
+        <div id="filter-container">
+            <label for="level-filter">Filter by level:</label>
+            <select id="level-filter" onchange="filterCourses()">
+                <option value="all">All levels</option>
+                <option value=1>Level 1</option>
+                <option value=2>Level 2</option>
+            </select>
+        </div>
+
+        <!--sort-->
+        <div id="sort-container">
+            <label for="sort">Sort by level:</label>
+            <select id="sort" onchange="sortCourses()">
+                <option value="asc">Lowest to highest</option>
+                <option value="desc">Highest to lowest</option>
+            </select>
+        </div>
+
+        <div id="courses-container">
+            <!-- Generated Courses here -->
+        </div>
+    </div>
+
+    <div>
+        <footer>
+            <p>&copy; 2023 Chen Liu</p>
+            <a class="gotop" href="#top">Top of Page</a>
+        </footer>
+    </div>
+</body>
+
+</html>
